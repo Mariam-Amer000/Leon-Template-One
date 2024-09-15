@@ -254,3 +254,28 @@ a{
         display: none;
     }
 }
+.portfolio{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.portfolio .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+.portfolio .p-box{
+    background-color: white;
+}
+.portfolio img{
+    max-width: 100%;
+}
+.portfolio .text{
+    padding: 10px 20px;
+}
+.portfolio .text p{
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
