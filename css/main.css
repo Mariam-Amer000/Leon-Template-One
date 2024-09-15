@@ -297,6 +297,7 @@ a{
 @media (max-width:991px) {
     .about .container{
         flex-direction: column;
+        text-align: center;
     }
 }
 .about .container{
@@ -373,6 +374,15 @@ a{
     text-decoration: none;
     margin-bottom: 10px;
 }
+@media (max-width: 767px) {
+    .contact .content  .mail{
+        font-size: 20px;
+    }
+    }
+.contact .content h1{
+    font-size: 25px;
+}
+
 .contact .social{
     display: flex;
     justify-content: center;
