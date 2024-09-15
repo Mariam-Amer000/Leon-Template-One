@@ -279,3 +279,107 @@ a{
     line-height: 1.6;
     margin-bottom: 0;
 }
+.about{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+@media (max-width:991px) {
+    .about .container{
+        flex-direction: column;
+    }
+}
+.about .container{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.about .image{
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.about img::before{
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+.about .image::after{
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    z-index: -1;
+    right: -150px;}
+.about img{
+    width: 250px;
+}
+.about .text{
+    flex-basis: calc(100% - 500px);
+}
+.about .text p:first-child{
+    color: black;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.about hr{
+    width: 50%;
+    display: inline-block;
+    border-color: var(--main-color);
+}
+.about .text p:last-child{
+    line-height: 2;
+    color: #777;
+}
+
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .content{
+    margin-top: 80px;
+    text-align: center;
+}
+.contact .content h1{
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+.contact .content  .mail{
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.contact .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.contact i{
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
