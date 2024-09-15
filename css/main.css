@@ -248,6 +248,11 @@ a{
 } */
 .services img{
     width:260px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 @media (max-width:1199px) {
     .services img{
@@ -267,6 +272,12 @@ a{
 }
 .portfolio .p-box{
     background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .portfolio img{
     max-width: 100%;
